@@ -1,0 +1,142 @@
+Algoritmo menu_funciones
+	Definir opciom, num Como Entero
+	Definir si_no, tipo_de_funcion Como Caracter
+	
+	Repetir
+		Escribir "bienvenido a este menu, elija una de las opciones "
+		Escribir "1 - Calcular usando PARA"
+		Escribir "2 - Calcular usando MIENTRAS"
+		Escribir "3 - Calcular usando REPETIR"
+		Escribir "4 - Salir del programa"
+		Escribir "Opcion: "
+		leer opciom
+		
+		Segun opciom Hacer
+			caso 1:
+				tipo_de_funcion = "Para"
+				Para contador<-0 Hasta 100 Con Paso 1 Hacer
+					Escribir contador
+				Fin Para
+				Escribir " "
+				Escribir " "
+				Escribir " "
+				Escribir "     -=Funcion [" tipo_de_funcion "] Finalizada=-"
+				
+				
+				Repetir
+					Escribir "¿Desea Usar Otra Funcion? (S/N)"
+					leer si_no
+					si_no = Minusculas(si_no)
+					
+					Segun si_no Hacer
+						caso "s": 
+							Repetir
+								escribir "¿Estas Seguro Que Quieres Continuar? (s/n)"
+								leer si_no
+								si_no = Minusculas(si_no)
+							Hasta Que si_no = "s" o si_no = "n"
+							Escribir " "
+							Escribir " "
+							Escribir " "
+							Escribir " "
+							Escribir " "
+							Escribir " "
+						caso "n": 
+						De Otro Modo:
+							Escribir "-= El Dato Ingresado Es Incorrecto =-"
+					Fin Segun
+				Hasta Que si_no = "s" o si_no = "n"
+				
+				
+				
+				
+				
+				
+				
+				
+			caso 2:
+				tipo_de_funcion = "Mientras"
+				num = 0
+				Mientras num < 100 Hacer
+					num = num + 1
+					escribir num
+				Fin Mientras
+				
+				Escribir " "
+				Escribir " "
+				Escribir " "
+				Escribir "     -=Funcion [" tipo_de_funcion "] Finalizada=-"
+				
+				
+				Repetir
+					Escribir "¿Desea Usar Otra Funcion? (S/N)"
+					leer si_no
+					si_no = Minusculas(si_no)
+					
+					Segun si_no Hacer
+						caso "s": 
+							Repetir
+								escribir "¿Estas Seguro Que Quieres Continuar? (s/n)"
+								leer si_no
+								si_no = Minusculas(si_no)
+							Hasta Que si_no = "s" o si_no = "n"
+							Escribir " "
+							Escribir " "
+							Escribir " "
+							Escribir " "
+							Escribir " "
+							Escribir " "
+						caso "n": 
+						De Otro Modo:
+							Escribir "-= El Dato Ingresado Es Incorrecto =-"
+					Fin Segun
+				Hasta Que si_no = "s" o si_no = "n"
+				
+			caso 3:
+				tipo_de_funcion = "Repetir"
+				
+				Repetir
+					num = num + 1;
+					escribir num
+				Hasta Que num >= 100
+				
+				
+				Escribir " "
+				Escribir " "
+				Escribir " "
+				Escribir "     -=Funcion [" tipo_de_funcion "] Finalizada=-"
+				
+				
+				Repetir
+					Escribir "¿Desea Usar Otra Funcion? (S/N)"
+					leer si_no
+					si_no = Minusculas(si_no)
+					
+					Segun si_no Hacer
+						caso "s": 
+							Repetir
+								escribir "¿Estas Seguro Que Quieres Continuar? (s/n)"
+								leer si_no
+								si_no = Minusculas(si_no)	
+							Hasta Que si_no = "s" o si_no = "n"
+							Escribir " "
+							Escribir " "
+							Escribir " "
+							Escribir " "
+							Escribir " "
+							Escribir " "
+						caso "n": 
+						De Otro Modo:
+							Escribir "-= El Dato Ingresado Es Incorrecto =-"
+					Fin Segun
+				Hasta Que si_no = "s" o si_no = "n"
+				
+			Caso 4:
+				si_no = "n"
+			De Otro Modo:
+				Escribir ">>> OPCION INCORRECTA"
+		Fin Segun
+	Hasta Que si_no = "n"
+	escribir "Usted Finalizado El Programa."
+
+FinAlgoritmo
